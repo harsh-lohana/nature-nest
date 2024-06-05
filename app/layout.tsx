@@ -44,15 +44,15 @@ export default function RootLayout({
               </span>
             </NavbarBrand>
             <div className="flex md:order-2 gap-x-2">
-              <Button className="bg-white border-black border-2 text-black hover:bg-black hover:border-none hover:text-white">
+              <Button className="hidden md:inline bg-white border-black border-2 text-black hover:bg-black hover:border-none hover:text-white">
                 Sign in
               </Button>
-              <Button className="bg-white border-black border-2 text-black hover:bg-black hover:border-none hover:text-white">
+              <Button className="hidden md:inline bg-white border-black border-2 text-black hover:bg-black hover:border-none hover:text-white">
                 Sign up
               </Button>
               <NavbarToggle />
             </div>
-            <NavbarCollapse>
+            <NavbarCollapse className="flex flex-col gap-3 justify-center">
               <NavbarLink href="#" active className="text-lg font-light">
                 Home
               </NavbarLink>
@@ -62,6 +62,14 @@ export default function RootLayout({
               <NavbarLink href="#" className="text-lg font-light">
                 Contact
               </NavbarLink>
+              <div className="flex flex-col gap-3">
+                <Button className="md:hidden bg-white border-black border-2 text-black hover:bg-black hover:border-none hover:text-white w-full">
+                  Sign in
+                </Button>
+                <Button className="md:hidden bg-white border-black border-2 text-black hover:bg-black hover:border-none hover:text-white w-full">
+                  Sign up
+                </Button>
+              </div>
             </NavbarCollapse>
           </Navbar>
           {children}

@@ -48,3 +48,24 @@ export const adventureList = [
     src: "/images/qutub_minar.jpg",
   },
 ];
+
+export const X_Posts = [
+  {
+    name: "TeddyNi",
+    username: "teddyni",
+    avatar: "/images/profile-1.jpg",
+    content: "I love this place",
+  },
+  {
+    name: "Vinay Gupta",
+    username: "vinaygupta45",
+    avatar: "/images/profile-2.jpg",
+    content: "This is great. I am going to visit this place again",
+  },
+  {
+    name: "Maya",
+    username: "maya_s45",
+    avatar: "/images/profile-3.jpg",
+    content: "Customer service is great.",
+  },
+];
